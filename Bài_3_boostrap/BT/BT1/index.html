@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f3062b4aea.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bài tập 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: rgb(226, 226, 226);">
+        <div class="row">
+            <!-- sidebar -->
+            <div class="col-2" style="background-color: rgb(60, 61, 61);">
+                <div class="row">
+                    <div class="container-fluid border-bottom">
+                        <img src="https://ten-sura-m.bn-ent.net/assets/img/home/system/greatstage.png" class="rounded-circle m-2" alt="" style="height: 40px; width: 40px;">
+                        <span class="fs-5 text-light">Admin</span>
+                    </div>
+                </div>
+                <div class="row" >
+                  <div class="container-fluid border-bottom">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtcVyA2Jn4raz8NwR3zg2pDXjKSpxJjMDH9Q&usqp=CAU" class="rounded-circle m-2" alt="" style="height: 40px; width: 40px;">
+                      <span class="fs-5 text-light">Rimuru Tempest</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="container-fluid m-1 pt-3">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control bg-secondary" placeholder="Search" aria-describedby="button-addon2">
+                      <button class="btn border btn-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="container-fluid d-grid m-1">
+                        <button class="btn btn-primary d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                          <span><i class="fa-solid fa-gauge-high"></i> Trang chủ </span><i class="dropdown-toggle "></i>
+                        </button>
+                      <div class="collapse" id="collapseExample">
+                        <div class=" d-grid">
+                          <button class="btn btn-success" type="button">option 1</button>
+                          <button class="btn btn-success" type="button">option 1</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="container-fluid d-grid m-1">
+                      <button class="btn btn-secondary d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapseExample">
+                        <span><i class="fa-solid fa-chart-pie"></i> Quản lý sản phẩm </span><i class="dropdown-toggle"></i>
+                      </button>
+                    <div class="collapse" id="collapse">
+                      <div class=" d-grid">
+                        <button class="btn btn-success" type="button">option 2</button>
+                        <button class="btn btn-success" type="button">option 2</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="container-fluid d-grid m-1">
+                    <button class="btn border d-flex justify-content-start" type="button"  aria-expanded="false" aria-controls="collapseExample">
+                      <span class="text-light"><i class="fa-regular fa-circle"></i> Danh sách</span>
+                    </button>
+                  </div>
+                </div>
+            </div>
+<!-- main-content -->
+            <div class="col-10">
+                <div class="row">
+                    <div class="navbar navbar-expand-lg bg-light border-bottom">
+                        <div class="container-fluid">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-bars"></i></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Trang chủ</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Đăng xuất</a>
+                              </li>
+                            </ul>
+                            <i class="fa-solid fa-magnifying-glass d-flex m-3"></i>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    <div class="pt-2 d-flex justify-content-between mb-3">
+                        <span class="text-start fs-3 fw-bold  ">Trang chủ </span>
+                        <span><a href="#" class="text-end fw-bold text-decoration-none m-3">Trang chủ </a></span>
+                    </div>
+                    <div class="container-fluid row">
+                        <div class="col-3">
+                            <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                                <div class="card-body row">
+                                  <div class="col-7">
+                                    <h2 class="card-title">150</h2>
+                                    <p class="card-text">New order</p>
+                                  </div>
+                                  <div class="col-5">
+                                    <h1><i class="fa-sharp fa-solid fa-bag-shopping m-3"></i></h1>
+                                  </div>
+                                </div>
+                              <div class="card-header border-top text-center " style="background-color: rgb(126, 126, 255);">
+                                <a href="" class="align-items-center text-decoration-none text-light">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                                
+                              </div>  
+                            </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+                              <div class="card-body row">
+                                <div class="col-7">
+                                  <h2 class="card-title">53<span class="fs-6">%</span></h2>
+                                  <p class="card-text">Bounce rate</p>
+                                </div>
+                                <div class="col-5">
+                                  <h1><i class="fa-solid fa-chart-simple m-3"></i></h1>
+                                </div>
+                              </div>
+                            <div class="card-header border-top text-center " style="background-color: rgb(103, 185, 103);">
+                              <a href="" class="align-items-center text-decoration-none text-light">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                              
+                            </div>  
+                          </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                            <div class="card-body row">
+                              <div class="col-8">
+                                <h2 class="card-title">44</h2>
+                                <p class="card-text">User registrations</p>
+                              </div>
+                              <div class="col-4">
+                                <h1><i class="fa-solid fa-user-plus m-3"></i></h1>
+                              </div>
+                            </div>
+                          <div class="card-header border-top text-center " style="background-color: rgb(245, 212, 25);">
+                            <a href="" class="align-items-center text-decoration-none text-light">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                            
+                          </div>  
+                        </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                          <div class="card-body row">
+                            <div class="col-7">
+                              <h2 class="card-title">65</h2>
+                              <p class="card-text">Unique visitors</p>
+                            </div>
+                            <div class="col-5">
+                              <h1><i class="fa-sharp fa-solid fa-chart-pie m-3"></i></h1>
+                            </div>
+                          </div>
+                        <div class="card-header border-top text-center " style="background-color: rgb(255, 126, 126);">
+                          <a href="" class="align-items-center text-decoration-none text-light">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                          
+                        </div>  
+                      </div>
+                  </div>
+                    </div>
+                    <div class="row">
+                        <div class="container-fluid bg-light border-top" style="margin-top: 325px;">
+                            <p>Copyright © 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+  </body>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</html>
