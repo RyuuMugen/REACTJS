@@ -1,5 +1,4 @@
-var arr1 = [1,2,3,4]
-var arr2 = [0,10]
+
 function findMaxNumber(array) {
     if (!array || !array.length) return "Lỗi";
     let max = array[0];
@@ -20,17 +19,15 @@ function findMinNumber(array) {
     } 
     return min;
 }
-var a = findMinNumber(arr1)
-var b = findMinNumber(arr2)
-var c = findMaxNumber(arr1)
-var d = findMaxNumber(arr2)
-console.log("canNest(",arr1,"," ,arr2,")")
 
-function check(){
-    if(a>b && c<d){
+function check(a,b){
+    if(findMinNumber(a)>findMinNumber(b) && findMaxNumber(a)<findMaxNumber(b)){
+        console.log("canNest(",a,"," ,b,")")
         return true
     }else{
+        console.log("canNest(",a,"," ,b,")")
         return false
     }
 }
-console.log(check())
+console.log(check([1,2,3,4],[0,10]))
+console.log(check([1,2,3,4,13],[0,10]))
