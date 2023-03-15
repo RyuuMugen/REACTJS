@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <div class="calculator-container">
+
+        <h3>Nhận thông tin khoản vay:</h3>
+        
+        <table>
+            <tr><td> 1) Số tiền :</td>
+                <td><input class="money" type="number" min="0" placeholder=""></td>
+            </tr>
+            <tr><td> 2) Lãi suất hàng năm (%):</td>
+                <td><input class="interest" type="number" min="0" placeholder=""></td>
+            </tr>
+            <tr><td> 3) Thời gian trả (năm):</td>
+                <td><input class="repayment" type="number" min="0" placeholder=""></td>
+            </tr>
+            <tr><td><button class="calculate"> Tính </button></td>
+                
+        </table>
+        <h3> Thông tin thanh toán:</h3>
+        <table>
+            </tr>
+            <tr><td> 4) Số tiền phải trả hàng tháng:</td>
+                <td>
+                
+                <input id="permonth" type="number" min="0" placeholder=""></td>
+            </tr>
+            <tr><td> 5) Tổng số tiền phải trả:</td>
+                <td>
+                
+                    <input id="sum" type="number" min="0" placeholder=""></td>
+            </tr>
+            <tr><td> 6) Tổng số lãi phải trả:</td>
+                <td>
+                
+                    <input id="result" type="number" min="0" placeholder=""></td>
+            </tr>
+           
+</table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT1</title>
+    <style>
+        .form{
+            padding: 10px 10px 10px 10px;
+            align-items: center;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+            <h1>ĐO CHỈ SỐ (BMI)</h1>
+            <p>Chiều cao</p>
+            <input type="number" id="height">
+            <p>Cân nặng</p>
+            <input type="number" id="weight">
+            <p>Giới tính:</p>
+            <input type="radio"  name="gender" value="1"><label>Nam</label>
+            <input type="radio"  name="gender" value="2"><label>Nữ</label><br>
+            <button type="submit" id="submit">Tính BMI</button>
+    </div>
+    <div class="form">
+        <div>
+            <h2>KẾT QUẢ</h2>
+        </div>
+        <div id="result">
+            <p id="statement"></p>
+        </div>
+    </div>
+    <script>
+        var heightInput = document.querySelector("#height");
+        var weightInput = document.querySelector("#weight");
+        var submitButton = document.querySelector("#submit");
+        var result = document.querySelector("#result");
+        var statement = document.querySelector("#statement");
+        var BMI, height, weight ,rate;
+
+        submitButton.addEventListener("click", ()=>{
+            
+            height = heightInput.value;
+            weight = weightInput.value;
+            BMI = (weight/(height**2)).toFixed(2); 
+            
+            var selected = document.querySelector('input[type=radio][name=gender]:checked');
+            rate= parseInt(selected.value)
+            
+            if (rate==1) {
+                if(BMI < 20.7){
+                    statement.innerText = `BMI: ${BMI} Gầy `;    
+                }else if((BMI > 20.7) && (BMI <= 26.4)){
+                    statement.innerText = `BMI: ${BMI} Bình thường `;
+                }else if((BMI >= 26.4) && (BMI <= 27.8 )){
+                    statement.innerText = `BMI: ${BMI} Thừa cân nhẹ`;
+                }else if((BMI >= 27.8) && (BMI <= 31.1 )){
+                    statement.innerText = `BMI: ${BMI} Trên lý tưởng `;
+                }else{
+                    statement.innerText = `BMI: ${BMI} Béo phì `;
+                }
+            } 
+            else {
+                if(BMI < 19.1){
+                    statement.innerText = `BMI: ${BMI} Gầy `;    
+                }else if((BMI > 19.1) && (BMI <= 25.8)){
+                    statement.innerText = `BMI: ${BMI} Bình thường `;
+                }else if((BMI >= 25.8) && (BMI <= 27.3 )){
+                    statement.innerText = `BMI: ${BMI} Thừa cân nhẹ`;
+                }else if((BMI >= 27.3) && (BMI <= 32.3 )){
+                    statement.innerText =  `BMI: ${BMI} Trên lý tưởng `;
+                }else{
+                    statement.innerText = `BMI: ${BMI} Béo phì `;
+                }
+            }
+
+        
+
+        }
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Th2</title>
+    <style>
+        #scrollDemo {
+            height: 300px;
+            width: 400px;
+            overflow: auto;
+            background-color: #f0db4f
+        }
+
+        #scrollDemo p {
+            /* show the scrollbar */
+            height: 500px;
+            width: 600px;
+        }
+        #control{
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="scrollDemo">
+        <p>JS Scroll Event Demo</p>
+    </div>
+
+    <div id="control">
+        <button id="btnScrollLeft">Scroll Left</button>
+        <button id="btnScrollRight">Scroll Right</button>
+        <button id="btnScrollTop">Scroll Top</button>
+        <button id="btnScrollBotton">Scroll Botton</button>
+    </div>
+
+    <script>
+        let control = document.querySelector('#control');
+
+        control.addEventListener('click', function (e) {
+            let div = document.querySelector('#scrollDemo');
+            let target = e.target;
+            
+            switch (target.id) {
+                case 'btnScrollLeft':
+                    div.scrollLeft += 20;
+                    break;
+
+                case 'btnScrollTop':
+                    div.scrollTop -= 20;
+                    break;
+
+                case 'btnScrollRight':
+                    div.scrollLeft -= 20;
+                    break;
+
+                case 'btnScrollBotton':
+                    div.scrollTop += 20;
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>
