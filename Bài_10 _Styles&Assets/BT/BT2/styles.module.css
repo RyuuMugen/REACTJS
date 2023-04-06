@@ -1,0 +1,14 @@
+.box {
+    width: 200px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  
+  .day {
+    background-color: blue;
+  }
+  
+  .night {
+    background-color: black;
+  }
+  
